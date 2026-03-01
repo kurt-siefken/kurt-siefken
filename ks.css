@@ -1,0 +1,80 @@
+
+
+body {
+	font-family: 'Dongle', sans-serif;
+	font-size: 26px;
+	background-color: #e5e8fb;
+	border: 0px solid red;
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.1em;
+}
+
+
+a {text-decoration: none;}
+
+
+.pagestructure {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 0px solid green;
+height: 100%;
+}
+
+.textside {width: 60%; height: 100%; display: flex; align-items: center; justify-content: flex-end;}
+.imageside{background-color: darkblue; width: 40%; height: 100%; display: flex; align-items: center;}
+.textside-shell {text-align: center; margin-right: 30px; max-width: 600px; text-wrap: balance;}
+.imageside-shell {margin-left: 30px; max-width: 300px; text-align: center;}
+
+
+.nameintro {
+font-family: 'Bayon', sans-serif;
+font-size: 80px;
+display: block;
+line-height: .9em;
+}
+
+.intro-blurb {margin-top: 20px;}
+
+
+.nametitle {font-size: 1.1em; text-transform: uppercase; line-height: .8em; margin-top: 10px;}
+.resumebutton {
+  background-color: darkblue;
+  color: #fff;
+  border-radius: 2em;
+  padding: 0px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Hover = gently lowering */
+.resumebutton:hover {
+
+background-color: #5959d8;
+}
+
+.buttonrow {margin-top: 30px; margin-bottom: 30px; display: none;}
+
+.headshot {width: 280px;}
+.linkage {color: #fff; margin-top: 20px;}
+
+
+
+
+@media screen and (max-width: 800px) {
+.nameintro {font-size: 50px; margin-top: 20px; margin-bottom: 16px;}
+.pagestructure {flex-direction: column; height: auto;}
+.textside, .imageside {width: 100%; height: auto; align-items: flex-start;}
+.textside-shell {width: 90%; margin: auto;}
+.imageside-shell {width: 90%; margin: auto; text-align: center; margin-bottom: 20px;}
+.headshot {width: 200px; margin-top: 20px;}
+}
+
+
+
+
+
+
+
